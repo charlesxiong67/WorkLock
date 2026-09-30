@@ -1,0 +1,13 @@
+{
+  "CheckSeconds": 60,
+  "ResetHour": 4,
+  "GameProcesses": [
+    "Lunar Client", "Modrinth App", "ModrinthApp", "CurseForge", "MinecraftLauncher", "Minecraft.Windows",
+    "Badlion Client", "PrismLauncher", "TLauncher",
+    "steam", "steamwebhelper", "EpicGamesLauncher", "Battle.net", "RiotClientServices", "LeagueClient",
+    "VALORANT", "FortniteClient-Win64-Shipping", "RobloxPlayerBeta", "RobloxPlayerLauncher", "RobloxStudioBeta",
+    "GeometryDash", "Overwatch", "cs2", "dota2", "GTA5", "RocketLeague", "EADesktop", "UbisoftConnect", "GalaxyClient"
+  ],
+  "GamePaths": [ "steamapps?common", "Epic Games", "Roblox?Versions", "Riot Games", "XboxGames" ],
+  "JavaCommandLinePatterns": [ "minecraft", "lunar", "fabric", "forge", "quilt", "modrinth", "curseforge", "badlion" ]
+}
