@@ -172,6 +172,28 @@ $resources = @'
     <Setter Property="BorderThickness" Value="1"/>
     <Setter Property="CornerRadius" Value="14"/>
   </Style>
+  <Style TargetType="ScrollBar">
+    <Setter Property="Width" Value="10"/>
+    <Setter Property="MinWidth" Value="10"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="ScrollBar">
+          <Track x:Name="PART_Track" IsDirectionReversed="True">
+            <Track.Thumb>
+              <Thumb>
+                <Thumb.Template>
+                  <ControlTemplate TargetType="Thumb">
+                    <Border CornerRadius="3" Background="{StaticResource Muted}" Opacity="0.45" Margin="3,2"/>
+                  </ControlTemplate>
+                </Thumb.Template>
+              </Thumb>
+            </Track.Thumb>
+          </Track>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
 </ResourceDictionary>
 '@
 foreach ($k in $palette.Keys) { $resources = $resources.Replace("{{$k}}", $palette[$k]) }
