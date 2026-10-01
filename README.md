@@ -6,6 +6,11 @@ WorkLock runs quietly in the background on Windows. About once a minute it check
 and if today's work isn't finished, it closes them and shows what's left to do. Tick everything
 off and games unlock for the rest of the day.
 
+<p>
+  <img src="docs/tasks-light.png" width="360" alt="WorkLock Tasks window, light theme, games locked with 2 tasks left">
+  <img src="docs/tasks-dark.png" width="360" alt="WorkLock Tasks window, dark theme, everything done and games unlocked">
+</p>
+
 ## Install
 
 1. Download this repo (**Code → Download ZIP**) and unzip it.
@@ -22,17 +27,18 @@ powershell -ExecutionPolicy Bypass -File install.ps1
 
 ## Using it
 
-Open **WorkLock Tasks** from the desktop.
+Open **WorkLock Tasks** from the desktop. It follows your Windows light or dark mode.
 
 - **Add** today's work. Tick **Weekly** for things that come back every Monday (like weekly homework).
 - **Tick** each task when it's done. When everything is ticked, games unlock.
+- Click the **×** next to a task to remove it.
 - Games are locked until you've added a list for the day. If you really have nothing,
   press **No work today**.
 - A new day starts at 4am. Anything unfinished carries over to the next day.
 
 ### Get someone to keep you honest (PIN)
 
-Press **PIN...** and have a parent or friend type a PIN. After that, ticking tasks off,
+Press **Set PIN** and have a parent or friend type a PIN. After that, ticking tasks off,
 removing unfinished tasks and "No work today" all need the PIN. So you have to show them your work
 before games unlock. Adding tasks never needs the PIN.
 
